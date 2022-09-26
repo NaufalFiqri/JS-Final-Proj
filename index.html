@@ -12,24 +12,66 @@
     ></script>
   </head>
   <body>
-    <header class="header">
-          <nav>
-            <div class="personal__logo">
-              Movie Mania
-              <a href="#">
-                <i class="fas fa-camera-movie"></i>
-              </a>
+    <section id="landing">
+      <nav class="nav__bar">
+        <div class="logo__wrapper">
+          <i class="fas fa-compact-disc"></i>
+          Movie Mania
+        </div>
+        <ul class="nav__links">
+          <li class="nav__link link__hover--effect link__hover--effect-yellow">
+            ACCOUNT
+          </li>
+          <li class="nav__link link__hover--effect link__hover--effect-yellow">
+            MY TICKETS
+          </li>
+          <li class="nav__link link__hover--effect link__hover--effect-yellow">
+            CONTACT
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="header__title">START STREAMING NOW</h1>
+          <a href="#browse">
+            <button type="button" class="btn">
+              Start Browsing<i class="fas fa-magnifying-glass"></i>
+            </button>
+          </a>
+        </div>
+      </header>
+    </section>
+    <section id="browse">
+      <div class="container">
+        <div class="row">
+          <div class="search__box">
+            <div class="search">
+              <div class="search__text">
+                <h1>Search for any movie</h1>
+                <h3>Click on search icon, then type the title</h3>
+              </div>
+              <div class="search__bar">
+                <input
+                  id="input__search"
+                  name="search-box"
+                  type="text"
+                  placeholder="Search . . ."
+                  required
+                />
+              </div>
             </div>
-            <ul class="nav__link--list">
-              <li class="nav__link">contact</li>
-              <li class="nav__link">contact</li>
-              <li class="nav__link">contact</li>
-              <li class="nav__link">contact</li>
-            </ul>
-          </nav>
-          <div class="header__content">
-            <h1 class="title">Rockstar</h1>
           </div>
-    </header>
+          <div class="sort__wrapper">
+            <select id="filter">
+              <option value="" class="sort" disabled selected>Sort</option>
+              <option value="ASCENDING_YEAR">Year, Ascending</option>
+              <option value="DESCENDING_YEAR">Year, Descending</option>
+              <option value="RATING">Rating</option>
+            </select>
+          </div>
+          <div class="movies__wrapper"><i class="fas fa-spinner"></i></div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
