@@ -33,7 +33,8 @@ p {
 
 a {
   text-decoration: none;
-  color: inherit;
+  position: relative;
+  transition: opacity 300ms ease;
 }
 
 li {
@@ -84,6 +85,7 @@ button {
 
 .nav__links {
   display: flex;
+  padding-top: 10px;
 }
 
 .nav__link {
@@ -181,6 +183,7 @@ button {
 .search__box {
   border-radius: 80px 16px;
   background-color: #242424;
+  margin-top: 32px;
   margin-bottom: 32px;
   width: 100%;
   height: 100%;
