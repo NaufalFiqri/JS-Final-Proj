@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Mania</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
     <script
       src="https://kit.fontawesome.com/76dff9548a.js"
       crossorigin="anonymous"
@@ -19,15 +20,9 @@
           Movie Mania
         </div>
         <ul class="nav__links">
-          <li class="nav__link">
-            ACCOUNT
-          </li>
-          <li class="nav__link">
-            MY TICKETS
-          </li>
-          <li class="nav__link">
-            CONTACT
-          </li>
+          <li class="nav__link">ACCOUNT</li>
+          <li class="nav__link">MY TICKETS</li>
+          <li class="nav__link">CONTACT</li>
         </ul>
       </nav>
       <header class="header">
@@ -40,6 +35,19 @@
           </a>
         </div>
       </header>
+      <video
+        class="landing__video"
+        muted
+        autoplay
+        loop
+        plays-inline
+        onloadstart="this.volume = 0.5"
+      >
+        <source src="assets/Avengers Background Video.mp4" type="video/mp4" />
+      </video>
+      <script>
+        document.querySelector(".landing__video").play();
+      </script>
     </section>
     <section id="browse">
       <div class="container">
@@ -71,7 +79,6 @@
           </div>
           <div class="movies__wrapper">
             <i class="fas fa-spinner"></i>
-
           </div>
         </div>
       </div>
